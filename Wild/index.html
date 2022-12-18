@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Корзина</title>
 </head>
 <body>
@@ -13,207 +14,293 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
         </div>  
-        <a href="#"><img src="" alt="Товары и точка"></a>
+        <a href="#"><p class="logo">Товары<br> и точка</p></a>
         <form action="" method="get">
-            <input name="s" placeholder="Я ищу..." type="search">
-          </form>
-        <nav class="nav">
+            <input class="find" name="s" placeholder="Я ищу..." type="search">
+        </form>
+        <nav>
             <ul>
-                <li>
-                    <a href="#">Профиль</a>
+                <li>                   
+                    <a href="#" >
+                       <img src="images/Exclude.svg" alt="Профиль">
+                        <span>Профиль</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">Корзина</a>
+                <li>             
+                    <a href="#">
+                        <img src="images/Vector.svg" alt="Корзина">Корзина
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <section class="basket">
-                <h1>Корзина</h1>
-                <input type="checkbox"> Выбрать всё
+        <section class="main_left">
+            <section class="basket_intro">
+                <h1 class="title_one">Корзина</h1>
+                <hr class="lines">
+                <section class="basket">
+                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label for="checkbox"></label>Выбрать всё </p><img class="closed1" src="images/closed.svg" alt="">    
 
-                <section class="basket_item">
-                    <input type="checkbox">
-                    <img src="" alt="Картинка товара">
-                    <h2>Футболка UZcotton мужская</h2>
-                    <h3>Цвет: белый</h3>
-                    <h3>Размер: 56</h3>
-                    <h4>Коледино WB <br> OOO Вайлдберриз</h4>
-
-                    <section>
-                        <button>-</button>
-                        <input type="text">
-                        <button>+</button>
-                        <h3>Осталось 2 шт.</h3>
-                        <img src="" alt="Избранное">
-                        <img src="" alt="Удаление">
+               
+               
+                <section class="basket_item1">
+                    <section class="basket_left">
+                        <input id="checkbox1" class="checkbox_left input_checkbox" type="checkbox" checked><label for="checkbox1"></label>
+                        <img class="basket_img" src="images/Frame3853.svg" alt="Картинка товара">
+                    </section>
+                    <section class="basket_text">
+                        <h2 class="suptitle_one">Футболка UZcotton мужская</h2>
+                        <h3 class="suptitle_two">Цвет: белый &nbsp; Размер: 56</h3>
+                        <h4 class="suptitle_three">Коледино WB </h4>
+                        <h4 class="suptitle_third">OOO Вайлдберриз</h4>
                     </section>
 
-                    <h2 class="cost">522 com</h2>
-                    <h2 class="cost_out">1051 com</h2>
+                    <section class="counter">
+                        <div class="counter__button counter__button_minus">-</div>
+                        <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
+                        <div class="counter__button counter__button_plus">+</div>
+                        <h3 class="remainder">Осталось 2 шт.</h3>
+                        <section class="counter_image">
+                        <img src="images/heart.png" alt="Избранное">
+                        <img src="images/basket.png" alt="Удаление">
+                        </section>
+                    </section>   
+                    <section class="cost_cont">
+                        <h2 class="cost">522 com</h2>
+                        <h2 class="cost_out">1051 com</h2>
+                    </section>
                 </section>
 
                 <section class="basket_item">
-                    <input type="checkbox">
-                    <img src="" alt="Картинка товара">
-                    <h2>Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
-                    <h3>Цвет: прозрачный</h3>
-                    <h4>Коледино WB <br> OOO Мегапрофстиль</h4>
-
-                    <section>
-                        <button>-</button>
-                        <input type="text">
-                        <button>+</button>                       
-                        <img src="" alt="Избранное">
-                        <img src="" alt="Удаление">
+                    <section class="basket_left">
+                        <input id="checkbox2" class="checkbox_left input_checkbox" type="checkbox" checked><label for="checkbox2"></label>
+                        <img class="basket_img" src="images/Frame277132129.svg" alt="Картинка товара">
+                    </section>  
+                    <section class="basket_text">
+                        <h2 class="suptitle_one">Силиконовый чехол картхолдер<br> (отверстия) для карт, прозрачный<br> кейс бампер на Apple iPhone XR,<br> MobiSafe</h2>
+                        <h3 class="suptitle_two">Цвет: прозрачный</h3>
+                        <h4 class="suptitle_three">Коледино WB </h4>
+                        <h4 class="suptitle_third">OOO Мегапрофстиль</h4>
                     </section>
 
+                    <section class="counter">
+                        <div class="counter__button counter__button_minus">-</div>
+                        <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
+                        <div class="counter__button counter__button_plus">+</div>
+                        <section class="counter_image">
+                        <img src="images/heart.png" alt="Избранное">
+                        <img src="images/basket.png" alt="Удаление">
+                        </section>
+                    </section><br>           
+                                          
+                        
+                    
+                    <section class="cost_cont">
                     <h2 class="cost">2 100 047 com</h2>
                     <h2 class="cost_out">2 300 047 com</h2>
+                    </section>
                 </section>
 
-                <section class="basket_item">
-                    <input type="checkbox">
-                    <img src="" alt="Картинка товара">
-                    <h2>Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell </h2>
-                    <h4>Коледино WB <br> OOO Вайлдберриз</h4>
-
-                    <section>
-                        <button>-</button>
-                        <input type="text">
-                        <button>+</button>
-                        <h3>Осталось 2 шт.</h3>
-                        <img src="" alt="Избранное">
-                        <img src="" alt="Удаление">
+                <section class="basket_item1">
+                    <section class="basket_left">
+                        <input id="checkbox3" class="checkbox_left input_checkbox" type="checkbox" checked><label for="checkbox3"></label>
+                        <img class="basket_img" src="images/Frame277132130.svg" alt="Картинка товара">
+                    </section>
+                    <section class="basket_text">
+                        <h2 class="suptitle_one">Карандаши цветные Faber-Castell<br> "Замок", набор 24 цвета,<br> заточенные, шестигранные,<br>Faber-Castell </h2>
+                        <h4 class="suptitle_three">Коледино WB </h4>
+                        <h4 class="suptitle_third"> OOO Вайлдберриз</h4>
                     </section>
 
-                    <h2 class="cost">494 com</h2>
-                    <h2 class="cost_out">950 com</h2>
+                    <section class="counter">
+                        <div class="counter__button counter__button_minus">-</div>
+                        <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
+                        <div class="counter__button counter__button_plus">+</div>
+                        <h3 class="remainder">Осталось 2 шт.</h3>
+                        <section class="counter_image">
+                        <img src="images/heart.png" alt="Избранное">
+                        <img src="images/red.svg" alt="Удаление">
+                        </section>
+                    </section>  
+                    
+                        
+                    
+                    <section class="cost_cont">
+                        <h2 class="cost">494 com</h2>
+                        <h2 class="cost_out">950 com</h2>
+                    </section>
                 </section>
                 
             </section>
 
-            <section class="Total">
-
-                <h1>Итого</h1>
-                <h4>4 товара</h4>
-                <h4>Скидка</h4>
-                <h4>Доставка</h4>
-
-                <h1>2 101 063 сом</h1>
-                <h4>2 302 048 сом</h4>
-                <h4>-200 985 сом</h4>
-                <h4>Бесплатно</h4>
-
-                <h2>Доставка в пункт выдачи</h2>
-                <img src="" alt="Изменение">
-                <h4>Бишкек, улица Ахматбека Суюмбаева, 12/1</h4>
-                <h4>5–8 фев</h4>
-
-                <img src="" alt="Подтверждение">
-                <p>Обратная доставка товаров на склад при отказе — бесплатно</p>
-
-                <h2>Оплата картой</h2>
-                <img src="" alt="Изменение">
-                <img src="" alt="Карта">
-                <p>1234 12•• •••• 1234</p>
-
-                <input type="checkbox"> Списать оплату сразу
-                <p>Спишем оплату с карты при получении</p>
-                <button>Заказать</button>
-
-                <input type="checkbox">Соглашаюсь с правилами пользования торговой площадкой и возврата
-            </section>
+            
         </section>
-
+        
         <section class="missing">
-            <h1>Отсутствуют 3 товара</h1>
-
+            <h1 class="missing_title">Отсутствуют 3 товара <img class="closed" src="images/closed.svg" alt=""></h1>
+            <hr class="lines1">
             <section class="missing_item">
-                <input type="checkbox">
-                <img src="" alt="Картинка товара">
-                <h2>Футболка UZcotton мужская</h2>
-                <h3>Цвет: белый</h3>
-                <h3>Размер: 56</h3>
-
-                <section>
-                    <img src="" alt="Избранное">
-                    <img src="" alt="Удаление">
+                <section class="missing_block">
+                <img class="missing_img" src="images/Frame3853.svg" alt="Картинка товара">
+                <section class="missing_name">
+                <h2 class="missing_suptitle_one">Футболка UZcotton мужская</h2>
+                <section class="missing_text">
+                <h3 class="missing_suptitle_two">Цвет: белый &nbsp; Размер: 56</h3>
                 </section>
+                </section>
+                </section>
+
+                    <section class="missing_image">
+                    <img src="images/heart.png" alt="Избранное">
+                    <img src="images/basket.png" alt="Удаление">
+                    </section>
             </section>
 
             <section class="missing_item">
-                <input type="checkbox">
-                <img src="" alt="Картинка товара">
-                <h2>Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
-                <h3>Цвет: прозрачный</h3>
-                <section>                    
-                    <img src="" alt="Избранное">
-                    <img src="" alt="Удаление">
+                <section class="missing_block">
+                <img class="missing_img" src="images/Frame277132129.svg" alt="Картинка товара">
+                <section class="missing_name">
+                <h2 class="missing_suptitle_one">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h2>
+                <section class="missing_text">
+                <h3 class="missing_suptitle_two">Цвет: прозрачный</h3>
                 </section>
+                </section>
+                </section>
+                    <section class="missing_image">
+                    <img src="images/heart.png" alt="Избранное">
+                    <img src="images/basket.png" alt="Удаление">
+                    </section>
             </section>
 
             <section class="missing_item">
-                <input type="checkbox">
-                <img src="" alt="Картинка товара">
-                <h2>Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell </h2>
-                <section>
-                    <img src="" alt="Избранное">
-                    <img src="" alt="Удаление">
-                </section>
+                    <section class="missing_block">
+                    <img class="missing_img" src="images/Frame277132130.svg" alt="Картинка товара">
+                    <h2 class="missing_suptitle_one">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell </h2>   
+                    </section>
+                    <section class="missing_image">
+                    <img src="images/heart.png" alt="Избранное">
+                    <img src="images/basket.png" alt="Удаление">
+                    </section>
             </section>
         </section>
 
         <section class="delivery">
-            <h1>Способ доставки</h1>
-            <p>Изменить</p>
+            <section class="delivery_main">
+                <section class="delivery_titlebox">
+            <h1 class="delivery_title_text">Способ доставки</h1>
+            <p class="delivery_change_text">Изменить</p>
+                </section>
 
-            <h2>Пункт выдачи</h2>
-            <h2>Стоимость доставки</h2>
-            <h2>5—6 февраля</h2>
-            <h2>7—8 февраля</h2>
-
-            <h2>Бишкек, улица Ахматбека Суюмбаева, 12/1</h2>
-            <p>4.99 Ежедневно с 10 до 21 </p>
-            <h2>Бесплатно</h2>
-            <img src="" alt="Маленькая картинка товара">
-            <img src="" alt="Маленькая картинка товара">
-            <img src="" alt="Маленькая картинка товара">
-
-            <img src="" alt="Маленькая картинка товара">
-
-            <img src="" alt="Подтверждение">
-            <p>Обратная доставка товаров на склад при отказе — бесплатно</p>
+                <section class="delivery_giving">
+                    <section class="delivery_date_block">
+            <h2 class="delivery_main_text_one">Пункт выдачи</h2>
+            <h2 class="delivery_main_text_one  delivery_padding">Стоимость доставки</h2>
+            <h2 class="delivery_main_text_one">5—6 февраля</h2>
+            <h2 class="delivery_main_text_one delivery_padding2">7—8 февраля</h2>
+                    </section>
+                    <section class="delivery_items">
+                    <section class="delivery_text_block">
+                    <section class="delivery_text_block1">
+            <h2 class="delivery_main_text_two">Бишкек, улица Ахматбека Суюмбаева, 12/1</h2>
+                  </section>
+                   <section class="delivery_text_block2">
+                   <p class="delivery_main_suptext">4.99 Ежедневно с 10 до 21 </p>
+                   </section>
+                    </section>
+            <h2 class="delivery_main_text_two">Бесплатно</h2>
+            <section class="delivery_products1">
+            <img src="images/deliv1.svg" alt="Маленькая картинка товара">
+            <img src="images/deliv2.svg" alt="Маленькая картинка товара">
+            <img src="images/deliv3.svg" alt="Маленькая картинка товара">
+            </section>
+            <img src="images/deliv4.svg" alt="Маленькая картинка товара">
+                    </section>  
+                </section>
+            </section>
+            <section class="delivery_back"> 
+            <img class="image_back_center" src="images/price_shipping.svg" alt="Подтверждение">
+            <p class="delivery_back_text">Обратная доставка товаров на склад при отказе — <span class="delivery_back_suptext"> бесплатно</span></p>
+            </section>
         </section>
 
         <section class="payment">
-            <h1>Способ оплаты</h1>
-            <p>Изменить</p>
+            <section class="payment_block">
+                <section class="payment_title">
+            <h1 class="delivery_title_text">Способ оплаты</h1>
+            <p class="delivery_change_text">Изменить</p>
+                </section>
 
-            <img src="" alt="Карта">
-            <p>1234 56•• •••• 1234</p>
-            <p>01/30</p>
-            <p>Спишем оплату с карты при получении</p>
+            <section class="payment_data">
+            <p class="payment_data_text"><img src="images/pay.svg" alt="Карта">1234 56•• •••• 1234 <span>01/30</span></p>
+            </section>
+            </section>
+            <section class="payment_info">
+            <p class="payment_data_info">Спишем оплату с карты при получении</p>
+            </section>
         </section>
 
         <section class="receiver">
-            <h1>Получатель</h1>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Фамилия">
-            <input type="text" placeholder="Почта">
-            <label for="">Телефон</label>
-            <input type="text">
-            <input type="text" placeholder="ИНН">
-            <p>Для таможенного оформления</p>
+            <section class="receiver_title">
+            <h1 class="delivery_title_text">Получатель</h1>
+            </section>
+            
+                <form class="receiver_mainblock" action="">
+            <input class="receiver_in1" type="text" placeholder="Имя">
+            <input class="receiver_in1" type="text" placeholder="Фамилия">
+            
+            <input class="receiver_in2 mail" type="text" placeholder="Почта">
+            <input class="receiver_in2 phonei" id="phone"  type="text" value='+7 (988) 123-45-67'>
+             <input class="receiver_in2 innc" id="inn" type="text" placeholder="ИНН"><label class="inn" for="inn">Для таможенного оформления</label>
+              <label class="phone" for="phone">Телефон</label>
+               </form>
         </section>
+
+    </section>
+
+    <section class="main_right">
+    <section class="total">
+        <section class="total_one">
+            <h1 class="title_two">Итого <span class="total_sum"> 2 101 063 сом</span></h1><br>
+            <h4 class="total_suptitle">4 товара  <span class="total_sum">2 302 048 сом</span></h4>
+            <h4 class="total_suptitle">Скидка <span class="total_sum">-200 985 сом</span></h4>
+            <h4 class="total_suptitle">Доставка <span class="total_sum">Бесплатно</span></h4>
+        </section>
+
+        <section class="total_delivery">
+            <h2 class="delivery_suptitle">Доставка в пункт выдачи<img class="change_vec" src="images/change.svg" alt="Изменение"></h2>
+            <h4 class="delivery_text">Бишкек, улица Ахматбека Суюмбаева, 12/1</h4>
+            <h4 class="delivery_date">5–8 фев</h4>
+        </section>
+
+        <section class="ac_total_delivery">
+            <img class="price_shipping" src="images/price_shipping.svg" alt="Подтверждение">
+            <p>Обратная доставка товаров на склад при отказе — <span class="green"> бесплатно</span></p>
+        </section>
+
+        <section class="delivery_pay">
+        <h2 class="delivery_suptitle">Оплата картой<img class="change_vec2" src="images/change.svg" alt="Изменение"></h2>
+        <p class="delivery_pay_text"><img src="images/pay.svg" alt="Карта">1234 12•• •••• 1234</p>
+        </section>
+        <section class="delivery_pay_wroff">
+            <p class="pay_text"> <input id="checkbox4" class="input_checkbox" type="checkbox"><label for="checkbox4"></label> Списать оплату сразу</p>
+        <p class="pay_text">Спишем оплату с карты при получении</p>
+        </section>
+        <button class="delivery_button" type="button"><p class="delivery_button_text">Заказать</p></button>
+        
+        <section class="sogl">
+         <input id="checkbox5" class="input_checkbox1" type="checkbox" checked><label for="checkbox5"></label><p class="checkbox_delivery">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+        </section>
+    </section>
+    </section>
 
     </main>
 
-    <footer class="footer">
-        <p>© 2022  ООО «Товары и точка»</p>
+    <footer>
+        <section class="footerblock">
+        <p class="footer_text">© 2022  ООО «Товары и точка»</p>
+        </section>
     </footer>
     
 </body>
