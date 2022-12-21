@@ -9,30 +9,31 @@
 </head>
 <body>
     <header class="header">
-        <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>  
-        <a href="#"><p class="logo">Товары<br> и точка</p></a>
-        <form action="" method="get">
+        <section class="logo">
+            <section class="catalog">
+                    <img class="catalog_img" src="images/catalog.svg" alt="">     
+            </section>
+            <section class="logotip">
+                <p class="logotip_text">Товары и точка</p>
+            </section>
+        </section>
+        
+        <section class="find_cont">
             <input class="find" name="s" placeholder="Я ищу..." type="search">
-        </form>
-        <nav>
-            <ul>
-                <li>                   
-                    <a href="#" >
-                       <img src="images/Exclude.svg" alt="Профиль">
-                        <span>Профиль</span>
-                    </a>
-                </li>
-                <li>             
-                    <a href="#">
-                        <img src="images/Vector.svg" alt="Корзина">Корзина
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <img class="find_ic" src="images/find.svg" alt="">
+        </section>
+        
+        <section class="icons_head">
+            <section class="profile">
+                <img class="profile_ic" src="images/Exclude.svg" alt="">
+                <p class="profile_tx">Профиль</p>
+            </section>
+            
+            <section class="bak">
+                <img class="bak_ic" src="images/Vector.svg" alt="">
+                <p class="bak_tx">Корзина</p>
+            </section>
+        </section>
     </header>
 
     <main>
@@ -41,7 +42,7 @@
                 <h1 class="title_one">Корзина</h1>
                 <hr class="lines">
                 <section class="basket">
-                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label for="checkbox"></label>Выбрать всё </p><img class="closed1" src="images/closed.svg" alt="">    
+                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label class="mobile_check" for="checkbox"></label>Выбрать всё </p><img class="closed1" src="images/closed.svg" alt="">    
 
                
                
@@ -52,7 +53,7 @@
                     </section>
                     <section class="basket_text">
                         <h2 class="suptitle_one">Футболка UZcotton мужская</h2>
-                        <h3 class="suptitle_two">Цвет: белый &nbsp; Размер: 56</h3>
+                        <h3 class="suptitle_two">Цвет: белый &nbsp; <span class="hide">Размер: 56</span></h3>
                         <h4 class="suptitle_three">Коледино WB </h4>
                         <h4 class="suptitle_third">OOO Вайлдберриз</h4>
                     </section>
@@ -62,7 +63,7 @@
                         <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
                         <div class="counter__button counter__button_plus">+</div>
                         <h3 class="remainder">Осталось 2 шт.</h3>
-                        <section class="counter_image">
+                        <section class="counter_image counter_image_mobile">
                         <img src="images/heart.png" alt="Избранное">
                         <img src="images/basket.png" alt="Удаление">
                         </section>
@@ -85,11 +86,11 @@
                         <h4 class="suptitle_third">OOO Мегапрофстиль</h4>
                     </section>
 
-                    <section class="counter">
+                    <section class="counter counter_mobile">
                         <div class="counter__button counter__button_minus">-</div>
                         <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
                         <div class="counter__button counter__button_plus">+</div>
-                        <section class="counter_image">
+                        <section class="counter_image  counter_image_mobile">
                         <img src="images/heart.png" alt="Избранное">
                         <img src="images/basket.png" alt="Удаление">
                         </section>
@@ -103,7 +104,7 @@
                     </section>
                 </section>
 
-                <section class="basket_item1">
+                <section class="basket_item1 basket_item_mobile">
                     <section class="basket_left">
                         <input id="checkbox3" class="checkbox_left input_checkbox" type="checkbox" checked><label for="checkbox3"></label>
                         <img class="basket_img" src="images/Frame277132130.svg" alt="Картинка товара">
@@ -119,7 +120,7 @@
                         <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
                         <div class="counter__button counter__button_plus">+</div>
                         <h3 class="remainder">Осталось 2 шт.</h3>
-                        <section class="counter_image">
+                        <section class="counter_image counter_image_mobile">
                         <img src="images/heart.png" alt="Избранное">
                         <img src="images/red.svg" alt="Удаление">
                         </section>
@@ -147,13 +148,13 @@
                 <section class="missing_name">
                 <h2 class="missing_suptitle_one">Футболка UZcotton мужская</h2>
                 <section class="missing_text">
-                <h3 class="missing_suptitle_two">Цвет: белый &nbsp; Размер: 56</h3>
+                <h3 class="missing_suptitle_two">Цвет: белый &nbsp;<span class="hide"> Размер: 56</span></h3>
                 </section>
                 </section>
                 </section>
 
                     <section class="missing_image">
-                    <img src="images/heart.png" alt="Избранное">
+                    <img class="heart" src="images/heart.png" alt="Избранное">
                     <img src="images/basket.png" alt="Удаление">
                     </section>
             </section>
@@ -174,7 +175,7 @@
                     </section>
             </section>
 
-            <section class="missing_item">
+            <section class="missing_item missing_item_mobile">
                     <section class="missing_block">
                     <img class="missing_img" src="images/Frame277132130.svg" alt="Картинка товара">
                     <h2 class="missing_suptitle_one">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell </h2>   
@@ -195,9 +196,9 @@
 
                 <section class="delivery_giving">
                     <section class="delivery_date_block">
-            <h2 class="delivery_main_text_one">Пункт выдачи</h2>
-            <h2 class="delivery_main_text_one  delivery_padding">Стоимость доставки</h2>
-            <h2 class="delivery_main_text_one">5—6 февраля</h2>
+            <h2 class="delivery_main_text_one dmt_m">Пункт выдачи</h2>
+            <h2 class="delivery_main_text_one  delivery_padding dmtc_m">Стоимость доставки</h2>
+            <h2 class="delivery_main_text_one dmto_m">5—6 февраля</h2>
             <h2 class="delivery_main_text_one delivery_padding2">7—8 февраля</h2>
                     </section>
                     <section class="delivery_items">
@@ -209,13 +210,15 @@
                    <p class="delivery_main_suptext">4.99 Ежедневно с 10 до 21 </p>
                    </section>
                     </section>
-            <h2 class="delivery_main_text_two">Бесплатно</h2>
+            <h2 class="delivery_main_text_two dmtt_m">Бесплатно</h2>
             <section class="delivery_products1">
-            <img src="images/deliv1.svg" alt="Маленькая картинка товара">
-            <img src="images/deliv2.svg" alt="Маленькая картинка товара">
-            <img src="images/deliv3.svg" alt="Маленькая картинка товара">
+            <img class="mobile_img" src="images/deliv1.svg" alt="Маленькая картинка товара">
+            <img class="mobile_img" src="images/deliv2.svg" alt="Маленькая картинка товара">
+            <img class="mobile_img" src="images/deliv3.svg" alt="Маленькая картинка товара">
             </section>
-            <img src="images/deliv4.svg" alt="Маленькая картинка товара">
+            <section class="mobile_image_m">
+            <img class="mobile_img" src="images/deliv4.svg" alt="Маленькая картинка товара">      
+            </section>
                     </section>  
                 </section>
             </section>
@@ -233,7 +236,7 @@
                 </section>
 
             <section class="payment_data">
-            <p class="payment_data_text"><img src="images/pay.svg" alt="Карта">1234 56•• •••• 1234 <span>01/30</span></p>
+            <p class="payment_data_text"><img src="images/pay.svg" alt="Карта">1234 56•• •••• 1234 <span class="mobile_span">01/30</span></p>
             </section>
             </section>
             <section class="payment_info">
@@ -247,13 +250,13 @@
             </section>
             
                 <form class="receiver_mainblock" action="">
-            <input class="receiver_in1" type="text" placeholder="Имя">
-            <input class="receiver_in1" type="text" placeholder="Фамилия">
+            <input class="receiver_in1 mobile_in1" type="text" placeholder="Имя">
+            <input class="receiver_in1 mobile_in2" type="text" placeholder="Фамилия">
             
-            <input class="receiver_in2 mail" type="text" placeholder="Почта">
-            <input class="receiver_in2 phonei" id="phone"  type="text" value='+7 (988) 123-45-67'>
-             <input class="receiver_in2 innc" id="inn" type="text" placeholder="ИНН"><label class="inn" for="inn">Для таможенного оформления</label>
-              <label class="phone" for="phone">Телефон</label>
+            <input class="receiver_in2 mail mobile_in3" type="text" placeholder="Почта">
+            <input class="receiver_in2 phonei mobile_in4" id="phone"  type="text" value='+7 (988) 123-45-67'>
+             <input class="receiver_in2 innc mobile_in5" id="inn" type="text" placeholder="ИНН"><label class="inn mobile_l1" for="inn">Для таможенного оформления</label>
+              <label class="phone mobile_l2" for="phone">Телефон</label>
                </form>
         </section>
 
@@ -280,11 +283,11 @@
         </section>
 
         <section class="delivery_pay">
-        <h2 class="delivery_suptitle">Оплата картой<img class="change_vec2" src="images/change.svg" alt="Изменение"></h2>
-        <p class="delivery_pay_text"><img src="images/pay.svg" alt="Карта">1234 12•• •••• 1234</p>
+        <h2 class="delivery_suptitle hide">Оплата картой<img class="change_vec2 hide" src="images/change.svg" alt="Изменение"></h2>
+        <p class="delivery_pay_text hide"><img src="images/pay.svg" alt="Карта">1234 12•• •••• 1234</p>
         </section>
         <section class="delivery_pay_wroff">
-            <p class="pay_text"> <input id="checkbox4" class="input_checkbox" type="checkbox"><label for="checkbox4"></label> Списать оплату сразу</p>
+            <p class="pay_text"> <input id="checkbox4" class="input_checkbox" type="checkbox"><label class="label_mobp" for="checkbox4"></label> Списать оплату сразу</p>
         <p class="pay_text">Спишем оплату с карты при получении</p>
         </section>
         <button class="delivery_button" type="button"><p class="delivery_button_text">Заказать</p></button>
