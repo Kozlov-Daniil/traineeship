@@ -42,7 +42,7 @@
                 <h1 class="title_one">Корзина</h1>
                 <hr class="lines">
                 <section class="ch_pad">
-                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label class="mobile_check" for="checkbox"></label>Выбрать всё </p><img class="closed1" src="images/closed.svg" alt="" onclick="isHide()">  
+                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label class="mobile_check" for="checkbox"></label>Выбрать всё </p><img id="closeding" class="closed1" src="images/closed.svg" alt="" onclick="isHide()">  <img id="closeding1" class="closed1" src="images/closed.svg" alt="" onclick="isV()" style="display: none;">  
                 </section>
                 <section id="basket" class="basket">
                   
@@ -143,7 +143,7 @@
         </section>
         
         <section class="missing">
-            <h1 class="missing_title">Отсутствуют 3 товара <img class="closed" src="images/closed.svg" alt="" onclick="isHides()"></h1>
+            <h1 class="missing_title">Отсутствуют 3 товара <img id="closeding2" class="closed" src="images/closed.svg" alt="" onclick="isHides()"><img id="closeding3" class="closed" src="images/closed.svg" alt="" onclick="isVs()" style="display: none;"></h1>
             <hr class="lines1">
             
             <section id="misid">
@@ -180,7 +180,7 @@
                     </section>
             </section>
 
-            <section class="missing_item missing_item_mobile">
+            <section class="missing_item pad missing_item_mobile">
                     <section class="missing_block">
                     <img class="missing_img" src="images/Frame277132130.svg" alt="Картинка товара">
                     <h2 class="missing_suptitle_one">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell </h2>   
