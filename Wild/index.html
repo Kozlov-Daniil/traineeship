@@ -41,8 +41,11 @@
             <section class="basket_intro">
                 <h1 class="title_one">Корзина</h1>
                 <hr class="lines">
-                <section class="basket">
-                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label class="mobile_check" for="checkbox"></label>Выбрать всё </p><img class="closed1" src="images/closed.svg" alt="">    
+                <section class="ch_pad">
+                <p class="checkbox"> <input id="checkbox" class="input_checkbox" type="checkbox" checked><label class="mobile_check" for="checkbox"></label>Выбрать всё </p><img class="closed1" src="images/closed.svg" alt="" onclick="isHide()">  
+                </section>
+                <section id="basket" class="basket">
+                  
 
                
                
@@ -58,7 +61,7 @@
                         <h4 class="suptitle_third">OOO Вайлдберриз</h4>
                     </section>
 
-                    <section class="counter">
+                    <section class="counter" data-counter>
                         <div class="counter__button counter__button_minus">-</div>
                         <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
                         <div class="counter__button counter__button_plus">+</div>
@@ -86,7 +89,7 @@
                         <h4 class="suptitle_third">OOO Мегапрофстиль</h4>
                     </section>
 
-                    <section class="counter counter_mobile">
+                    <section class="counter counter_mobile" data-counter>
                         <div class="counter__button counter__button_minus">-</div>
                         <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
                         <div class="counter__button counter__button_plus">+</div>
@@ -115,7 +118,7 @@
                         <h4 class="suptitle_third"> OOO Вайлдберриз</h4>
                     </section>
 
-                    <section class="counter">
+                    <section class="counter" data-counter > 
                         <div class="counter__button counter__button_minus">-</div>
                         <div class="counter__input"><input class="counter_input" type="text" disabled value="1"></div>
                         <div class="counter__button counter__button_plus">+</div>
@@ -140,8 +143,10 @@
         </section>
         
         <section class="missing">
-            <h1 class="missing_title">Отсутствуют 3 товара <img class="closed" src="images/closed.svg" alt=""></h1>
+            <h1 class="missing_title">Отсутствуют 3 товара <img class="closed" src="images/closed.svg" alt="" onclick="isHides()"></h1>
             <hr class="lines1">
+            
+            <section id="misid">
             <section class="missing_item">
                 <section class="missing_block">
                 <img class="missing_img" src="images/Frame3853.svg" alt="Картинка товара">
@@ -158,7 +163,7 @@
                     <img src="images/basket.png" alt="Удаление">
                     </section>
             </section>
-
+        
             <section class="missing_item">
                 <section class="missing_block">
                 <img class="missing_img" src="images/Frame277132129.svg" alt="Картинка товара">
@@ -184,6 +189,7 @@
                     <img src="images/heart.png" alt="Избранное">
                     <img src="images/basket.png" alt="Удаление">
                     </section>
+            </section>
             </section>
         </section>
 
@@ -305,6 +311,8 @@
         <p class="footer_text">© 2022  ООО «Товары и точка»</p>
         </section>
     </footer>
+    
+    <script src="js/index.js"></script>
     
 </body>
 </html>
